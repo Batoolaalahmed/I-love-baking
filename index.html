@@ -1,0 +1,375 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <title>Home Page</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo.PNG">
+</head>
+
+<style>
+  /* navagitton bar start */
+* {
+ box-sizing: auto;
+}
+
+body {
+ margin: 0px;
+ font-family: "Inter", sans-serif;
+ font-weight: bold
+}
+
+.nav {
+ height: 155px;
+ width: 100%;
+ background-color: rgba(255, 255, 255, 0.671);
+ position: relative;
+}
+.nav > .nav-links {
+font-size: 18px;
+display: inline;
+float: right;
+
+}
+.nav > .nav-links > ul li a{
+color: #27554a;
+line-height: 112px;
+font-size: 20px;
+display: block;
+padding: 0px 25px;
+text-decoration: none;
+
+}
+.nav > .nav-links > ul{
+list-style: none;
+position: relative;
+padding: 30;
+margin-top: 10px;
+}
+.nav > .nav-links > ul li{
+display: inline-block;
+
+
+}
+.nav > .nav-links > ul li:hover{
+
+border-radius: 5px;
+}
+.nav > .nav-btn {
+display: none; /*Hide toggle button for desktop*/
+}
+.nav > #nav-check {
+display: none;
+}
+
+/* underline while hovering */
+.nav-links a:hover {
+text-decoration: underline;
+border-bottom: solid 4px #b44d80;
+transition: all 0.3s ease-in-out;
+width: 65%;
+height: 80px;
+z-index: 100;
+}
+
+@media (max-width:850px) {
+.nav > .nav-btn {
+display: inline-block;
+position: absolute;
+right: 0px;
+top: 0px;
+z-index: 100;
+}
+.nav > .nav-btn > label {
+height: 50px;
+padding: 13px;
+display: inline-block;
+width: 50px;
+
+}
+.nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+background-color: rgba(0, 0, 0, 0.3);
+}
+.nav > .nav-btn > label > span {
+height: 10px;
+border-top: 2px solid #27554a;
+display: block;
+width: 25px;
+
+}
+.nav > .nav-links {
+position: absolute;
+height: 0px;
+transition: all 0.3s ease-in;
+overflow-y: hidden;
+top: 50px;
+display: block;
+width: 100%;
+background-color: #fffbfb;
+left: 0px;
+z-index: 100;
+}
+.nav > .nav-links > ul li a {
+display: block;
+width: 100%;
+}
+
+/*   */
+
+
+
+.nav > .nav-links > ul li{
+ padding: 0;
+ background-color: #fffbfb;
+ display: block;
+ margin-bottom: 20px;
+  
+}
+.nav > .nav-links > ul li a{
+   margin-left: 40%;
+}
+.nav .nav-links ul a.icon{
+ margin-left: 33%;
+}
+
+/*   */
+.nav > #nav-check:not(:checked) ~ .nav-links {
+height: 0px;
+}
+.nav > #nav-check:checked ~ .nav-links {
+height: calc(100vh - 50px);
+overflow-y: auto;
+}
+}
+.nav > .nav-header {
+display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+display: inline-block;
+padding: 10px 10px 10px 10px;
+}
+
+/* navagitton bar End */
+
+
+
+
+body {
+background-image: url(./assets/images/flowertart.JPG);
+width: 100%;
+height: 100%;
+background-size: 100%;
+background-repeat: no-repeat;
+position: relative;
+background-position: center center;
+background-attachment: fixed;
+background-size: cover;
+
+}
+
+
+
+h1 {
+font-weight: normal;
+}
+
+
+.card {
+position: absolute;
+font-size: 45px;
+color: #ffffff;
+text-shadow: #b44d80;
+border-radius: 1.5em;
+min-width: 200px;
+max-width: 1000px;
+width: 30%;
+cursor: pointer;
+top: 55%;
+transform: translate(-50%, -50%);
+left: 32%;
+z-index: 1;
+
+}
+.note::after {
+content: '';
+width: 20%;
+height: 2px;
+border-radius: 999px;
+background-color: #AFAFAF;
+background: linear-gradient(135deg, rgb(43, 217, 75) 0%, rgba(0,130,200,1) 100%);
+position: absolute;
+top: -1.8em;
+left: 0;
+}
+.note {
+font-size: 0.4em;
+color:#27554acf;
+position: relative;
+margin-top: 3em;
+}
+
+
+/* Scroller styling */
+.scroller {
+height: 1.2em;
+line-height: 1.2em;
+position: relative;
+overflow: hidden;
+width: 10em;
+}
+.scroller > span {
+position: absolute;
+top: 0;
+animation: slide 5s infinite;
+font-weight: bold;
+
+}
+@keyframes slide {
+0% {
+top: 0;
+}
+25% {
+top: -1.2em;
+}
+50% {
+top: -2.4em;
+}
+75% {
+top: -3.6em;
+}
+}
+
+
+
+a {
+color:#fffbfb;
+text-decoration: none;
+}
+.footer {  
+position: absolute;  
+left: 0px;  
+bottom: 0px;  
+right: 0px; 
+height: 25;  
+width: 100%;  
+background-color: #27554a;  
+color: white;  
+text-align: center; 
+float:left;
+padding: 20px; 
+}  
+
+.padding-right {
+padding-right: 15px;
+}
+
+footer a:hover.hover-color {
+color: aquamarine;
+text-decoration: none;
+}
+
+
+</style>
+
+<body>
+  <header>
+    <div class="nav">
+      <input type="checkbox" id="nav-check">
+      <div class="nav-title">
+      <a href="index.html"><img src="./assets/images/logo.PNG"
+        style="
+          position: absolute;
+          display: block;
+          width: 140px;
+          height: 120px;
+          background-size: contain;
+          z-index: 1;
+          top: 20px;
+          left: 50px;" /> </a>
+    </div>
+
+         <div class="nav-btn">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+         
+         <div class="nav-links">
+             <ul>
+              <li><a href="sourdough.html" target="_self">SOURDOUGH</a></li>
+              <li><a href="recipes.html" target="_self">RECIPES</a></li>
+              <li><a href="utensils.html" target="_self">UTENSILS</a></li>
+              <li><a href="video.html" target="_self">VIDEOS</a></li>
+              <li><a href="Gallery.html" target="_self">GALLERY</a></li>
+
+             </ul>
+         </div>
+      </div>
+    </header>
+
+
+    <div class="card">
+      <h1>Baking is
+        <!-- Scroller Start -->
+        
+        <div class="scroller">
+          <span>
+            Therpy<br/>
+            Art<br/>
+            Love<br/>
+            Fun
+          </span>
+        </div>
+
+        
+        <!-- Scroller End -->
+      </h1>
+      <p class="note">
+        Join me exploring <br> the magic of baking <br>
+      Let Start! <a href="sourdough.html">Here</a>
+    </p>
+    </div>
+   
+    <footer>
+      <div class="footer">  
+        <a href="https://www.facebook.com/" target="_blank"
+        class="fa fa-facebook-f fa-lg fa-2x hover-color padding right"></a>
+
+        <a href="https://www.instagram.com/" target="_blank"
+        class="fa fa-instagram fa-lg fa-2x hover-color padding right"></a>
+
+        <a href="https://www.twitter.com/" target="_blank"
+        class="fa fa-twitter fa-lg fa-2x hover-color padding right"></a>
+
+        <a href="https://www.pinterest.com/" target="_blank"
+              class="fa fa-pinterest fa-lg fa-2x hover-color padding-right"></a>
+
+              <a href="https://www.linkedin.com/" target="_blank"
+              class="fa fa-linkedin fa-lg fa-2x hover-color padding-right"></a>
+
+
+        <a href="https://www.github.com/" target="_blank"
+        class="fa fa-github-alt fa-lg fa-2x hover-color padding right"></a>
+
+
+        </div>  
+      </footer>
+       
+       
+
+     
+        
+           
+     </div>
+     
+    
+ </body>
+ </html>
